@@ -1,4 +1,3 @@
-
 #:No comment:#
 class UsersController < ApplicationController
   def new

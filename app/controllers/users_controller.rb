@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 
 #:No comment:#
 class UsersController < ApplicationController

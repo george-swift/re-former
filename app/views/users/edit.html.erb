@@ -12,7 +12,7 @@
     <%= form_with model: @user, method: :patch do |form| %>
       <ul>
         <% @user.errors.full_messages.each do |error| %>
-          <li><%= error %></li>
+          <li class="alert alert-danger w-50" role="alert"><%= error %></li>
         <% end %>
       </ul>
       <%= form.label :username, 'Username' %><br>

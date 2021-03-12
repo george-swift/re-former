@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Bare Metal Form</h1>
+    <%= form_with model: @user do |form| %>
+      <%= form.label :username %>
+      <%= form.text_field :username, class:"form-control" %>
+      <%= form.label :email %>
+      <%= form.email_field :email, class:"form-control" %>
+      <%= form.label :password %>
+      <%= form.password_field :password, class:"form-control" %>
+      <%= form.submit "#{'submit'}".upcase, class:"btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <%#= form_tag("/users", method: "post") do %>
+    <%#= label_tag 'username', 'Username' %>
+    <%#= text_field_tag 'username' %>
+    <%#= label_tag 'email', 'Email:'%>
+    <%#= email_field_tag 'email' %>
+    <%#= label_tag 'password', 'Password:'%>
+    <%#= password_field_tag 'password', 'Password:' %>
+    <%#= submit_tag 'Submit' %>
+  <%# end %>
+
+  <%# <form accept-charset="UTF-8" action="/users" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+    <%# <label for="uname">Username:</label>
+    <input type="text" id="uname" name="user[username]"><br><br> %>
+    <%# <label for="email">Email:</label> %>
+    <%# <input type="email" id="email" name="user[email]"><br><br> %>
+    <%# <label for="Password">Password:</label> %>
+    <%# <input type="password" id="password" name="user[password]"><br><br> %>
+    <%# <input type="submit" value="Submit"> %>
+  <%# </form> %>
+</div>

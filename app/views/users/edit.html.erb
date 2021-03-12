@@ -15,16 +15,17 @@
           <li class="alert alert-danger w-50" role="alert"><%= error %></li>
         <% end %>
       </ul>
-      <%= form.label :username, 'Username' %><br>
+      <%= form.label :username%><br>
       <%= form.text_field :username %><br><br>
-      <%= form.label :email, 'Email' %><br>
+      <%= form.label :email %><br>
       <%= form.email_field :email %><br><br>
-      <%= form.label :password, 'Password' %><br>
+      <%= form.label :password %><br>
       <%= form.password_field :password %><br><br>
       <%= form.submit "#{'submit changes'}".upcase, class:"btn btn-primary" %>
     <% end %>
   </div>
 
+//This condition comments out this Form
   <% if false %>
     <%= form_tag("/users", method: "post") do %>
       <%= label_tag 'username', 'Username' %><br>
@@ -37,6 +38,7 @@
     <% end %>
   <% end %>
 
+//This condition comments out this Form
   <% if false %>
     <form accept-charset="UTF-8" action="/users" method="post">
       <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">

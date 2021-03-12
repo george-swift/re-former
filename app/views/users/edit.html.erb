@@ -10,17 +10,13 @@
     <h1>Bare Metal Form</h1>
 
     <%= form_with model: @user, method: :patch do |form| %>
-      <ul>
-        <% @user.errors.full_messages.each do |error| %>
-          <li class="alert alert-danger w-50" role="alert"><%= error %></li>
-        <% end %>
-      </ul>
-      <%= form.label :username%><br>
-      <%= form.text_field :username %><br><br>
-      <%= form.label :email %><br>
-      <%= form.email_field :email %><br><br>
-      <%= form.label :password %><br>
-      <%= form.password_field :password %><br><br>
+      <%= render 'error_messages' %>
+      <%= form.label :username%>
+      <%= form.text_field :username, class:"form-control" %>
+      <%= form.label :email %>
+      <%= form.email_field :email, class:"form-control" %>
+      <%= form.label :password %>
+      <%= form.password_field :password, class:"form-control" %>
       <%= form.submit "#{'submit changes'}".upcase, class:"btn btn-primary" %>
     <% end %>
   </div>

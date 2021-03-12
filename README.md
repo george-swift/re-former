@@ -2,14 +2,14 @@
 
 ## Project Name: Bare Metal Forms and Helpers
 
-### Objective: 
-Building forms, from nearly-pure HTML to using the helper methods that Rails provides. The Rails way sends parameters to a controller which builds an instance of a model with those parameters for the view. 
+### Objective:
+Building forms, from nearly-pure HTML to using the helper methods that Rails provides. The Rails way sends parameters to a controller which builds an instance of a model with those parameters for the view.
 
 ![screenshot](./app/assets/images/screenshot.png)
 
 ## Features
 
-> The front end displays a form which allows a user to input their username, email and password.
+> The front end ( `http://localhost:3000/users/new` ) displays a form which allows a user to input their username, email and password.
 > The back end shows the server output and/or any errors stack trace.
 > None of the input fields can be blank on the edit page: `http://localhost:3000/users/1`.
 > On the edit page, if a user tries submitting a form that fails the validations, a list of error messages attached to the failed model is displayed.
